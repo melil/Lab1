@@ -26,5 +26,37 @@ namespace Lab1
         {
             this.InitializeComponent();
         }
+
+        private void ell_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
+        {
+            trans.TranslateX += e.Delta.Translation.X;
+            trans.TranslateY += e.Delta.Translation.Y;
+
+            if (trans.TranslateX > 500)
+            {
+                trans.TranslateX = 500; 
+            } else if (trans.TranslateX < 0)
+            {
+                trans.TranslateX = 0;
+            } 
+
+
+            if (trans.TranslateY > 500)
+            {
+                trans.TranslateY = 500;
+            } else if (trans.TranslateY < 0)
+            {
+                trans.TranslateY = 0;
+            }
+
+            string transX = Convert.ToString(trans.TranslateX);
+            string transY = Convert.ToString(trans.TranslateY);
+            string coord = "x = " + transX + " " + "y = " + transY;
+            textblock_lbl.Text = coord;
+
+            
+        }
+        
+       
     }
 }

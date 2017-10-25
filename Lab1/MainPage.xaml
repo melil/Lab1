@@ -8,6 +8,14 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Canvas Width="600" Height="600" Background="Aqua">
+            <Ellipse x:Name="ell" Fill="Red" Width="100" Height="100" ManipulationMode="All" ManipulationDelta="ell_ManipulationDelta">
+                <Ellipse.RenderTransform>
+                    <CompositeTransform x:Name="trans"/>
+                </Ellipse.RenderTransform>
+            </Ellipse>
 
+        </Canvas>
+        <TextBlock x:Name="textblock_lbl" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
     </Grid>
 </Page>
