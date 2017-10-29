@@ -107,6 +107,16 @@
     <None Include="Lab1_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\grid.png" />
+    <Content Include="Assets\bird\bird_01.jpg" />
+    <Content Include="Assets\bird\bird_02.jpg" />
+    <Content Include="Assets\bird\bird_03.jpg" />
+    <Content Include="Assets\bird\bird_04.jpg" />
+    <Content Include="Assets\bird\bird_05.jpg" />
+    <Content Include="Assets\bird\bird_06.jpg" />
+    <Content Include="Assets\bird\bird_07.jpg" />
+    <Content Include="Assets\bird\bird_08.jpg" />
+    <Content Include="Assets\bird\bird_09.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

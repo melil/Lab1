@@ -8,12 +8,20 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Canvas Width="600" Height="600" Background="Aqua">
-            <Ellipse x:Name="ell" Fill="Red" Width="100" Height="100" ManipulationMode="All" ManipulationDelta="ell_ManipulationDelta">
-                <Ellipse.RenderTransform>
+        <Canvas Background="Aqua" Margin="140,25,140,10" x:Name="canvas_name" Width="1000">
+            <Image x:Name="birdImgOne" Source="Assets/bird/bird_01.jpg" ManipulationDelta="bird_1" Canvas.Left="36" Canvas.Top="36">
+                <Image.RenderTransform>
+                    <CompositeTransform x:Name="birdOneTransform"/>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="grid" Source="Assets/grid.png" Canvas.Left="36" Canvas.Top="130"></Image>
+
+
+            <Image x:Name="ell" Source="Assets/bird/bird_01.jpg"  ManipulationMode="All" ManipulationDelta="ell_ManipulationDelta">
+                <Image.RenderTransform>
                     <CompositeTransform x:Name="trans"/>
-                </Ellipse.RenderTransform>
-            </Ellipse>
+                </Image.RenderTransform>
+            </Image>
 
         </Canvas>
         <TextBlock x:Name="textblock_lbl" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
