@@ -42,8 +42,11 @@ namespace Lab1
 
             if (imgOneTransform.TranslateX >= 24 && imgOneTransform.TranslateX <= 47)
             {
+                imgOneTransform.TranslateX = 100;
+                imgOneTransform.TranslateY = 100;
                 if (imgOneTransform.TranslateY >= 174 && imgOneTransform.TranslateY <= 197)
                     bool1 = true;
+                
             }
             else
             {

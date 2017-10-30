@@ -107,6 +107,7 @@
     <None Include="Lab1_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\bird\original.png" />
     <Content Include="Assets\grid.png" />
     <Content Include="Assets\bird\bird_01.jpg" />
     <Content Include="Assets\bird\bird_02.jpg" />
