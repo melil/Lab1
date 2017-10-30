@@ -8,22 +8,70 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Canvas Background="Aqua" Margin="140,25,140,10" x:Name="canvas_name" Width="1000">
-            <Image x:Name="birdImgOne" Source="Assets/bird/bird_01.jpg" ManipulationDelta="bird_1" Canvas.Left="36" Canvas.Top="36">
+        <Canvas Background="Aqua" Margin="10,58,10,10" x:Name="canvas_name">
+            <Image x:Name="Grid" Source="Assets/grid.png" Canvas.Top="185" Canvas.Left="36"></Image>
+
+            <Image x:Name="imgSeven" Source="Assets/bird/bird_07.jpg" ManipulationMode="All" ManipulationDelta="imgSeven_ManipulationDelta" Canvas.Left="280" Canvas.Top="0">
                 <Image.RenderTransform>
-                    <CompositeTransform x:Name="birdOneTransform"/>
+                    <CompositeTransform x:Name="imgSevenTransform"/>
                 </Image.RenderTransform>
             </Image>
-            <Image x:Name="grid" Source="Assets/grid.png" Canvas.Left="36" Canvas.Top="130"></Image>
 
-
-            <Image x:Name="ell" Source="Assets/bird/bird_01.jpg"  ManipulationMode="All" ManipulationDelta="ell_ManipulationDelta">
+            <Image x:Name="imgEight" Source="Assets/bird/bird_08.jpg" ManipulationMode="All" ManipulationDelta="imgEight_ManipulationDelta" Canvas.Left="300" Canvas.Top="20">
                 <Image.RenderTransform>
-                    <CompositeTransform x:Name="trans"/>
+                    <CompositeTransform x:Name="imgEightTransform"/>
                 </Image.RenderTransform>
             </Image>
+
+            <Image x:Name="imgNine" Source="Assets/bird/bird_09.jpg" ManipulationMode="All" ManipulationDelta="imgNine_ManipulationDelta" Canvas.Left="320" Canvas.Top="40">
+                <Image.RenderTransform>
+                    <CompositeTransform x:Name="imgNineTransform"/>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image x:Name="imgFour" Source="Assets/bird/bird_04.jpg" ManipulationMode="All" ManipulationDelta="imgFour_ManipulationDelta" Canvas.Left="140" Canvas.Top="0">
+                <Image.RenderTransform>
+                    <CompositeTransform x:Name="imgFourTransform"/>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image x:Name="imgFive" Source="Assets/bird/bird_05.jpg" ManipulationMode="All" ManipulationDelta="imgFive_ManipulationDelta" Canvas.Left="160" Canvas.Top="20">
+                <Image.RenderTransform>
+                    <CompositeTransform x:Name="imgFiveTransform"/>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image x:Name="imgSix" Source="Assets/bird/bird_06.jpg" ManipulationMode="All" ManipulationDelta="imgSix_ManipulationDelta" Canvas.Left="180" Canvas.Top="40">
+                <Image.RenderTransform>
+                    <CompositeTransform x:Name="imgSixTransform"/>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image x:Name="imgOne" Source="Assets/bird/bird_01.jpg"  ManipulationMode="All" ManipulationDelta="imgOne_ManipulationDelta">
+                <Image.RenderTransform>
+                    <CompositeTransform x:Name="imgOneTransform"/>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image x:Name="imgTwo" Source="Assets/bird/bird_02.jpg" ManipulationMode="All" ManipulationDelta="imgTwo_ManipulationDelta" Canvas.Left="20" Canvas.Top="20">
+                <Image.RenderTransform>
+                    <CompositeTransform x:Name="imgTwoTransform"/>
+                </Image.RenderTransform>
+            </Image>
+
+            <Image x:Name="imgThree" Source="Assets/bird/bird_03.jpg" ManipulationMode="All" ManipulationDelta="imgThree_ManipulationDelta" Canvas.Left="40" Canvas.Top="40">
+                <Image.RenderTransform>
+                    <CompositeTransform x:Name="imgThreeTransform"/>
+                </Image.RenderTransform>
+            </Image>
+            <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="" FontSize="55" x:Name="win_lbl" Canvas.Top="569"/>
+
+
+
+
+
 
         </Canvas>
-        <TextBlock x:Name="textblock_lbl" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textblock_lbl" HorizontalAlignment="Left" FontSize="40" TextWrapping="Wrap" Text="Puzzle" VerticalAlignment="Top" Margin="10,0,0,0"/>
     </Grid>
 </Page>

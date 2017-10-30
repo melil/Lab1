@@ -25,51 +25,193 @@ namespace Lab1
     {
 
         double counter = 0;
+        bool bool1, bool2, bool3, bool4, bool5, bool6, bool7, bool8, bool9 = false;
 
         public MainPage()
         {
             this.InitializeComponent();
+            calculate();
 
 
         }
 
-        private void ell_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
+        private void imgOne_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
         {
-            trans.TranslateX += e.Delta.Translation.X;
-            trans.TranslateY += e.Delta.Translation.Y;
+            imgOneTransform.TranslateX += e.Delta.Translation.X;
+            imgOneTransform.TranslateY += e.Delta.Translation.Y;
 
-            if (trans.TranslateX >= 250 && trans.TranslateY <= 350)
+            if (imgOneTransform.TranslateX >= 24 && imgOneTransform.TranslateX <= 47)
             {
-                counter++;
+                if (imgOneTransform.TranslateY >= 174 && imgOneTransform.TranslateY <= 197)
+                    bool1 = true;
             }
-            
-    
-            
-
-            string transX = Convert.ToString(trans.TranslateX);
-            string transY = Convert.ToString(trans.TranslateY);
-            
-            string coord = "x = " + transX + " " + "y = " + transY + "counter: " + counter;
-            textblock_lbl.Text = coord;
-
-            
-        }
-
-        private void bird_1(object sender, ManipulationDeltaRoutedEventArgs e)
-        {
-            birdOneTransform.TranslateX += e.Delta.Translation.X;
-            birdOneTransform.TranslateY += e.Delta.Translation.Y;
-
-
-
-            if(birdOneTransform.TranslateX >= 350)
+            else
             {
-
+                bool1 = false;
             }
 
-
-
-
         }
+
+        private void imgTwo_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
+        {
+            imgTwoTransform.TranslateX += e.Delta.Translation.X;
+            imgTwoTransform.TranslateY += e.Delta.Translation.Y;
+
+            if (imgTwoTransform.TranslateX >= 137 && imgTwoTransform.TranslateX <= 162)
+            {
+                if (imgTwoTransform.TranslateY >= 153 && imgTwoTransform.TranslateY <= 179)
+                    bool2 = true;
+            }
+            else
+            {
+                bool2 = false;
+            }
+
+        
+            calculate();
+        }
+
+        private void imgThree_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
+        {
+            imgThreeTransform.TranslateX += e.Delta.Translation.X;
+            imgThreeTransform.TranslateY += e.Delta.Translation.Y;
+
+            if (imgThreeTransform.TranslateX >= 249 && imgThreeTransform.TranslateX <= 273)
+            {
+                if (imgThreeTransform.TranslateY >= 132 && imgThreeTransform.TranslateY <= 159)
+                    bool3 = true;
+            }
+            else
+            {
+                bool3 = false;
+            }
+
+      
+            calculate();
+        }
+
+        private void imgFour_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
+        {
+            imgFourTransform.TranslateX += e.Delta.Translation.X;
+            imgFourTransform.TranslateY += e.Delta.Translation.Y;
+
+            if (imgFourTransform.TranslateX >= -117 && imgFourTransform.TranslateX <= -91)
+            {
+                if (imgFourTransform.TranslateY >= 263 && imgFourTransform.TranslateY <= 288)
+                    bool4 = true;
+            }
+            else
+            {
+                bool4 = false;
+            }
+
+
+            calculate();
+        }
+
+        private void imgFive_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
+        {
+            imgFiveTransform.TranslateX += e.Delta.Translation.X;
+            imgFiveTransform.TranslateY += e.Delta.Translation.Y;
+
+            if (imgFiveTransform.TranslateX >= 0 && imgFiveTransform.TranslateX <= 21)
+            {
+                if (imgFiveTransform.TranslateY >= 243 && imgFiveTransform.TranslateY <= 268)
+                    bool5 = true;
+            }
+            else
+            {
+                bool5 = false;
+            }
+
+
+            calculate();
+        }
+
+        private void imgSix_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
+        {
+
+            imgSixTransform.TranslateX += e.Delta.Translation.X;
+            imgSixTransform.TranslateY += e.Delta.Translation.Y;
+
+
+            if (imgSixTransform.TranslateX >= 108 && imgSixTransform.TranslateX <= 133)
+            {
+                if (imgSixTransform.TranslateY >= 221 && imgSixTransform.TranslateY <= 247)
+                    bool6 = true;
+            }
+            else
+            {
+                bool6 = false;
+            }
+
+
+           
+            calculate();
+        }
+
+        private void imgSeven_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
+        {
+            imgSevenTransform.TranslateX += e.Delta.Translation.X;
+            imgSevenTransform.TranslateY += e.Delta.Translation.Y;
+
+            if (imgSevenTransform.TranslateX >= -259 && imgSevenTransform.TranslateX <= -233)
+            {
+                if (imgSevenTransform.TranslateY >= 351 && imgSevenTransform.TranslateY <= 379)
+                    bool7 = true;
+            }
+            else
+            {
+                bool7 = false;
+            }
+
+   
+            calculate();
+        }
+
+        private void imgEight_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
+        {
+            imgEightTransform.TranslateX += e.Delta.Translation.X;
+            imgEightTransform.TranslateY += e.Delta.Translation.Y;
+
+            if (imgEightTransform.TranslateX >= -145 && imgEightTransform.TranslateX <= -119)
+            {
+                if (imgEightTransform.TranslateY >= 331 && imgEightTransform.TranslateY <= 357)
+                    bool8 = true;
+            }
+            else
+            {
+                bool8 = false;
+            }
+
+            calculate();
+        }
+
+        private void imgNine_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
+        {
+            imgNineTransform.TranslateX += e.Delta.Translation.X;
+            imgNineTransform.TranslateY += e.Delta.Translation.Y;
+
+            if (imgNineTransform.TranslateX >= -33 && imgNineTransform.TranslateX <= -6)
+            {
+                if (imgNineTransform.TranslateY >= 310 && imgNineTransform.TranslateY <= 339)
+                    bool9 = true;
+            }
+            else
+            {
+                bool9 = false;
+            }
+
+            calculate();
+        }
+
+        private void calculate()
+        {
+            if (bool1 && bool2 && bool3 && bool4 && bool5 && bool6 && bool7 && bool8 && bool9 == true)
+            {
+                textblock_lbl.Text = "Great";
+            } 
+        }
+
     }
 }
