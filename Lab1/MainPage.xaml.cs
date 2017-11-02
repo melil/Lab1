@@ -72,6 +72,35 @@ namespace Lab1
             calculate();
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            shake();
+        }
+
+        private void shake()
+        {
+            Random rnd = new Random();
+            imgOneTransform.TranslateX = rnd.Next(10, 70);
+            imgOneTransform.TranslateY = rnd.Next(10, 70);
+
+            imgTwoTransform.TranslateX = rnd.Next(10, 70);
+            imgTwoTransform.TranslateY = rnd.Next(10, 70);
+            imgThreeTransform.TranslateX = rnd.Next(10, 70);
+            imgThreeTransform.TranslateY = rnd.Next(10, 70);
+            imgFourTransform.TranslateX = rnd.Next(10, 70);
+            imgFourTransform.TranslateY = rnd.Next(10, 70);
+            imgFiveTransform.TranslateX = rnd.Next(10, 70);
+            imgFiveTransform.TranslateY = rnd.Next(10, 70);
+            imgSixTransform.TranslateX = rnd.Next(10, 70);
+            imgSixTransform.TranslateY = rnd.Next(10, 70);
+            imgSevenTransform.TranslateX = rnd.Next(10, 70);
+            imgSevenTransform.TranslateY = rnd.Next(10, 70);
+            imgEightTransform.TranslateX = rnd.Next(10, 70);
+            imgEightTransform.TranslateY = rnd.Next(10, 70);
+            imgNineTransform.TranslateX = rnd.Next(10, 70);
+            imgNineTransform.TranslateY = rnd.Next(10, 70);
+        }
+
         private void imgThree_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
         {
             imgThreeTransform.TranslateX += e.Delta.Translation.X;

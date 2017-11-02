@@ -10,8 +10,10 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <Canvas Background="Aqua" Margin="10,58,10,10" x:Name="canvas_name">
+
             <Image x:Name="Grid" Source="Assets/grid.png" Canvas.Top="185" Canvas.Left="36"></Image>
             <Image x:Name="Grid1" Source="Assets/bird/original.png" Canvas.Top="10" Height="152" Width="250" Canvas.Left="506"/>
+            <Button Content="Shake" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="597" Canvas.Top="185" Click="Button_Click"/>
 
             <Image x:Name="imgSeven" Source="Assets/bird/bird_07.jpg" ManipulationMode="All" ManipulationDelta="imgSeven_ManipulationDelta" Canvas.Left="280" Canvas.Top="0">
                 <Image.RenderTransform>
@@ -75,6 +77,7 @@
 
         </Canvas>
         <TextBlock x:Name="textblock_lbl" HorizontalAlignment="Left" FontSize="40" TextWrapping="Wrap" Text="Puzzle" VerticalAlignment="Top" Margin="10,0,0,0"/>
+
 
     </Grid>
 </Page>
